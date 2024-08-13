@@ -8,7 +8,7 @@
 - Recipe Details Page
 
 **Components:**
-
+- Header
 - Recipe Card
 - Search Bar
 - Error Message
