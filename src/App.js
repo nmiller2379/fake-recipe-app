@@ -6,7 +6,7 @@ import RecipeDetail from "./pages/RecipeDetail/RecipeDetail";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -14,6 +14,7 @@ function App() {
         </Routes>
       </Router>
     </div>
+    
   );
 }
 
