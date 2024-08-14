@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Button } from "react-bootstrap";
 import Header from "../../components/Header/Header";
 import "./RecipeDetail.css";
 
 export default function RecipeDetail() {
   const { id } = useParams();
   const [recipe, setRecipe] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.log(`Fetching recipe with id: ${id}`);
@@ -28,13 +31,13 @@ export default function RecipeDetail() {
     }
   };
   return (
-    <div>
+    <div id="recipe">
       <Header title={recipe.name} />
       <div>
         <strong>Best for: </strong>
         {renderMealType()}
       </div>
-      <img src={recipe.image} alt={recipe.name} style={{ width: "25%" }} />
+      <img src={recipe.image} alt={recipe.name} />
       <h2>Ingredients</h2>
       <ol>
         {ingredients &&
@@ -49,6 +52,9 @@ export default function RecipeDetail() {
             <li key={index}>{instruction}</li>
           ))}
       </ol>
+      <Button variant="primary" onClick={() => navigate("/")}>
+        Go Back
+      </Button>
     </div>
   );
 }
