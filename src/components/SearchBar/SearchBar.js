@@ -1,6 +1,9 @@
 import React from "react";
+import { Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-export default function SearchBar({ onChange }) {
+export default function SearchBar({ onChange, onClick }) {
   return (
     <div>
       <input
@@ -8,7 +11,9 @@ export default function SearchBar({ onChange }) {
         placeholder="Search for recipes..."
         onChange={onChange}
       />
-      <button>Search</button>
+      <Button onClick={onClick}>
+        <FontAwesomeIcon icon={faSearch} />
+      </Button>
     </div>
   );
 }
