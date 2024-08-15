@@ -1,6 +1,6 @@
 # Fake Recipe App
 
-The Fake Recipe App is a simple web application that allows users to browse, search, and view details of various recipes. This project is built using React and demonstrates basic functionalities such as displaying a list of items, searching, and navigating between different pages.
+The Fake Recipe App is a simple web application that allows users to browse, search, and view details of various recipes. This project is built using React, Bootstrap and the dummyJSON API. It demonstrates basic functionalities such as displaying a list of items, searching, and navigating between different pages.
 
 ![Screenshot of Fake Recipe App](./assets/fake-recipe-app.png)
 
