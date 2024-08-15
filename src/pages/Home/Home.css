@@ -1,7 +1,18 @@
-#header {
-    background-color: #f8f9fa;
-    padding: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
+#top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+    background-color: #f8f8f8;
+}
+
+#testimonial {
+  flex: 1;
+}
+
+#search-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }

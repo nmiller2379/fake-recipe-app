@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "./Home.css";
 
 export default function Home() {
   const [recipes, setRecipes] = useState([]);
@@ -36,8 +37,14 @@ export default function Home() {
 
   return (
     <>
-      <div id="header">
-        <SearchBar onChange={handleChange} onClick={handleClick} />
+      <div id="top-bar">
+        <p id="testimonial">
+          <strong>Satisfied user:</strong> "These recipies are really fake!"
+          <i> &mdash; John Doe</i>
+        </p>
+        <div id="search-container">
+          <SearchBar onChange={handleChange} onClick={handleClick} />
+        </div>
       </div>
       <Header title="Fake Recipes for Fun" />
       <div className="d-flex flex-wrap justify-content-center">
