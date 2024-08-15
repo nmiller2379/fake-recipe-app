@@ -39,7 +39,7 @@ export default function Home() {
       <div id="header">
         <SearchBar onChange={handleChange} onClick={handleClick} />
       </div>
-      <Header title="Recipes" />
+      <Header title="Fake Recipes for Fun" />
       <div className="d-flex flex-wrap justify-content-center">
         {recipes.map((recipe) => (
           <Card style={{ width: "18rem" }} key={recipe.id}>

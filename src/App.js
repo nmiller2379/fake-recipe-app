@@ -7,7 +7,7 @@ import SearchResults from "./pages/SearchResults/SearchResults";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
