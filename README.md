@@ -18,7 +18,7 @@ The Fake Recipe App is a simple web application that allows users to browse, sea
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/fake-recipe-app.git
+   git clone https://github.com/nmiller2379/fake-recipe-app.git
    ```
 2. Navigate to the project directory:
    ```sh
